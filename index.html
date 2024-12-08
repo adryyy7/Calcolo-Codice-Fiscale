@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calcolo Codice Fiscale</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <center><b><h1>Calcolo Codice Fiscale</h1></b></center>
+
+        <form name="form1">
+            <p>Cognome <input type="text" id="cognome" name="cognome" placeholder="Inserisci cognome..."></p>
+            <p>Nome <input type="text" id="nome" name="nome" placeholder="Inserisci nome..."></p>
+            <p>Data di nascita <input type="date" id="dataNascita" name="dataNascita"></p>
+            <p>Luogo di nascita
+                <select id="luogoNascita"> 
+                    <option value="H096">Putignano</option>
+                    <option value="A662">Bari</option>
+                    <option value="F376">Monopoli</option>
+                    <option value="F915">Noci</option>
+                    <option value="A048">Acquaviva delle Fonti</option>
+                    <option value="E038">Gioia del Colle</option>
+                </select>
+            </p>
+            <p>Sesso <select id="sesso">
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select></p>
+            <br>
+            <input type="button" id="calcola" value="CALCOLA CODICE FISCALE" onclick="calcolaCodiceFiscale()">
+            <input type="reset" id="reset" value="RESET">
+        </form>
+    
+        <div id="risultato"></div>
+
+    </body>
+</html>
